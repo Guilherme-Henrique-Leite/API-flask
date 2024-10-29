@@ -51,7 +51,7 @@ class ListaDesenvolvedores(Resource):
         desenvolvedores.append(dados)
         return desenvolvedores[posicao]
     
-api .add_resource(Desenvolvedor, '/dev/<int:id>')
+api.add_resource(Desenvolvedor, '/dev/<int:id>')
 api.add_resource(ListaDesenvolvedores, '/dev/')
 api.add_resource(Habilidades, '/habilidades/')
 api.add_resource(ManipulaHabilidades,'/manipula/<int:id>')
